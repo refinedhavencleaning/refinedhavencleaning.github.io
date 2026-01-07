@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refined Haven Cleaning</title>  <!-- Google Fonts -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">  <style>
+    :root {
+      --taupe: #9E8C7A;
+      --sand: #D6C6B8;
+      --clay: #C28B6A;
+      --cream: #F6F2EE;
+      --charcoal: #2F2A26;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+                  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero-box {
+      background: rgba(158, 140, 122, 0.75);
+      padding: 3rem 2rem;
+      border-radius: 20px;
+      max-width: 700px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+      color: var(--cream);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 400;
+      color: var(--cream);
+      margin-bottom: 1.2rem;
+    }
+
+    h1 span {
+      font-style: italic;
+      color: var(--clay);
+    }
+
+    .hero-text {
+      color: var(--cream);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      background: var(--clay);
+      color: white;
+      padding: 0.9rem 1.6rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--cream);
+      color: var(--cream);
+      padding: 0.9rem 1.6rem;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    footer {
+      background: var(--taupe);
+      color: var(--cream);
+      text-align: center;
+      padding: 3rem 1.5rem;
+    }
+
+    footer p {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+    }
+  </style></head>
+<body><header>
+  <div class="hero-box">
+    <div class="eyebrow">Professional Cleaning Services</div>
+    <h1>Every detail is intentional,<br><span>every touch refined.</span></h1>
+    <p class="hero-text">
+      Luxury residential and short-term rental cleaning, thoughtfully delivered.<br>
+      Serving Indiana & Michigan.
+    </p>
+    <div class="buttons">
+      <a href="#contact" class="btn-primary">Book a Cleaning</a>
+      <a href="#contact" class="btn-secondary">Request a Quote</a>
+    </div>
+  </div>
+</header><section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="service-card">Vacation Rental & Airbnb Turnovers</div>
+    <div class="service-card">Residential Cleaning</div>
+    <div class="service-card">Deep Cleaning</div>
+    <div class="service-card">Move-In / Move-Out Cleaning</div>
+    <div class="service-card">Post-Construction Cleaning</div>
+  </div>
+</section><section id="contact">
+  <h2>Get a Free Quote</h2>
+  <p style="text-align:center; max-width:600px; margin:auto;">
+    Ready for a calm, guest-ready, refined clean? Reach out today to schedule or request a personalized quote.
+  </p>
+</section><footer>
+  <p>
+    Refined Haven Cleaning<br>
+    Licensed & Insured · Detail-Driven · Trusted Care
+  </p>
+</footer></body>
+</html>
