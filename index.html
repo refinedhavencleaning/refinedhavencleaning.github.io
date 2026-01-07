@@ -14,6 +14,11 @@
     * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; background-color: var(--cream); color: var(--charcoal); line-height: 1.6; }
 
+    /* Sticky Header Navigation */
+    nav { position: sticky; top: 0; background: rgba(254, 242, 238, 0.95); display: flex; justify-content: center; gap: 2rem; padding: 1rem; z-index: 999; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    nav a { text-decoration: none; color: var(--charcoal); font-weight: 500; transition: color 0.3s ease; }
+    nav a:hover { color: var(--clay); }
+
     header { min-height: 100vh; background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
     .hero-box { background: rgba(158, 140, 122, 0.75); padding: 3rem 2rem; border-radius: 20px; max-width: 700px; }
     .eyebrow { text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 1rem; color: var(--cream); }
@@ -49,9 +54,14 @@
     footer { background: var(--taupe); color: var(--cream); text-align: center; padding: 3rem 1.5rem; }
     footer p { max-width: 600px; margin: auto; }
 
-    @media (max-width: 768px) { h1 { font-size: 2.2rem; } }
+    @media (max-width: 768px) { h1 { font-size: 2.2rem; } nav { flex-direction: column; gap: 1rem; } }
   </style></head>
-<body><header>
+<body><nav>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</nav><header>
   <div class="hero-box">
     <div class="eyebrow">Professional Cleaning Services</div>
     <h1>Every detail is intentional,<br><span>every touch refined.</span></h1>
@@ -61,7 +71,7 @@
       <a href="#contact" class="btn-secondary">Request a Quote</a>
     </div>
   </div>
-</header><section>
+</header><section id="services">
   <h2>Our Services</h2>
   <div class="services">
     <div class="service-card">Vacation Rental & Airbnb Turnovers</div>
